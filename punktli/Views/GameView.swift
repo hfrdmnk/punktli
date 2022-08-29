@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameView.swift
 //  punktli
 //
 //  Created by Dominik Hofer on 29.08.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +21,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationStack {
+            GameView()
+        }
+        .environmentObject(GameViewModel())
     }
 }

@@ -11,7 +11,7 @@
 		8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384228BD52D2007DAB7B /* RoundModel.swift */; };
 		8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384428BD537B007DAB7B /* GameViewModel.swift */; };
 		8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3728BD504400017DC3 /* punktliApp.swift */; };
-		8DF8CA3A28BD504400017DC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3928BD504400017DC3 /* ContentView.swift */; };
+		8DF8CA3A28BD504400017DC3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3928BD504400017DC3 /* GameView.swift */; };
 		8DF8CA3C28BD504700017DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3B28BD504700017DC3 /* Assets.xcassets */; };
 		8DF8CA3F28BD504700017DC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3E28BD504700017DC3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -22,7 +22,7 @@
 		8D31384428BD537B007DAB7B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = punktli/ViewModels/GameViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8DF8CA3428BD504400017DC3 /* punktli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punktli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF8CA3728BD504400017DC3 /* punktliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = punktliApp.swift; sourceTree = "<group>"; };
-		8DF8CA3928BD504400017DC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DF8CA3928BD504400017DC3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		8DF8CA3B28BD504700017DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DF8CA3E28BD504700017DC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +41,7 @@
 		8D31383D28BD524F007DAB7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8DF8CA3928BD504400017DC3 /* ContentView.swift */,
+				8DF8CA3928BD504400017DC3 /* GameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */,
-				8DF8CA3A28BD504400017DC3 /* ContentView.swift in Sources */,
+				8DF8CA3A28BD504400017DC3 /* GameView.swift in Sources */,
 				8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */,
 				8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */,
 				8D31384128BD5285007DAB7B /* TeamModel.swift in Sources */,

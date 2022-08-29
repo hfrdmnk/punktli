@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct punktliApp: App {
+    @StateObject var gameViewModel: GameViewModel = GameViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                GameView()
+            }
+            .environmentObject(gameViewModel)
         }
     }
 }
