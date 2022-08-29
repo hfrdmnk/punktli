@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D31384128BD5285007DAB7B /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384028BD5285007DAB7B /* TeamModel.swift */; };
+		8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384228BD52D2007DAB7B /* RoundModel.swift */; };
+		8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384428BD537B007DAB7B /* GameViewModel.swift */; };
 		8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3728BD504400017DC3 /* punktliApp.swift */; };
 		8DF8CA3A28BD504400017DC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3928BD504400017DC3 /* ContentView.swift */; };
 		8DF8CA3C28BD504700017DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3B28BD504700017DC3 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D31384028BD5285007DAB7B /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		8D31384228BD52D2007DAB7B /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
+		8D31384428BD537B007DAB7B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = punktli/ViewModels/GameViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8DF8CA3428BD504400017DC3 /* punktli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punktli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF8CA3728BD504400017DC3 /* punktliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = punktliApp.swift; sourceTree = "<group>"; };
 		8DF8CA3928BD504400017DC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D31383D28BD524F007DAB7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DF8CA3928BD504400017DC3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D31383E28BD5259007DAB7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D31384028BD5285007DAB7B /* TeamModel.swift */,
+				8D31384228BD52D2007DAB7B /* RoundModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D31383F28BD5260007DAB7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D31384428BD537B007DAB7B /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		8DF8CA2B28BD504400017DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				8DF8CA3728BD504400017DC3 /* punktliApp.swift */,
-				8DF8CA3928BD504400017DC3 /* ContentView.swift */,
+				8D31383E28BD5259007DAB7B /* Models */,
+				8D31383F28BD5260007DAB7B /* ViewModels */,
+				8D31383D28BD524F007DAB7B /* Views */,
 				8DF8CA3B28BD504700017DC3 /* Assets.xcassets */,
 				8DF8CA3D28BD504700017DC3 /* Preview Content */,
 			);
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */,
 				8DF8CA3A28BD504400017DC3 /* ContentView.swift in Sources */,
 				8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */,
+				8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */,
+				8D31384128BD5285007DAB7B /* TeamModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
