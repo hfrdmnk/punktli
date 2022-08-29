@@ -34,9 +34,9 @@ class GameViewModel: ObservableObject {
             saveData()
         }
     }
-    let team1Key: String = "team1"
-    let team2Key: String = "team2"
-    let roundsKey: String = "rounds"
+    fileprivate let team1Key: String = "team1"
+    fileprivate let team2Key: String = "team2"
+    fileprivate let roundsKey: String = "rounds"
     
     init() {
         getData()
@@ -75,5 +75,16 @@ class GameViewModel: ObservableObject {
         if let encodedRounds = try? JSONEncoder().encode(rounds) {
             UserDefaults.standard.set(encodedRounds, forKey: roundsKey)
         }
+    }
+    
+    func deleteRound(indexSet: IndexSet) {
+        rounds.remove(atOffsets: indexSet)
+    }
+    
+    func resetGame() {
+        rounds = []
+        
+        team1.points = 0
+        team2.points = 0
     }
 }

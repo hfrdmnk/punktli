@@ -10,6 +10,11 @@
 		8D31384128BD5285007DAB7B /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384028BD5285007DAB7B /* TeamModel.swift */; };
 		8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384228BD52D2007DAB7B /* RoundModel.swift */; };
 		8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384428BD537B007DAB7B /* GameViewModel.swift */; };
+		8D31384728BD5931007DAB7B /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384628BD5931007DAB7B /* TeamScoreView.swift */; };
+		8D31384928BD610F007DAB7B /* ScorePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384828BD610F007DAB7B /* ScorePickerView.swift */; };
+		8D31384B28BD630A007DAB7B /* ScoreToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384A28BD630A007DAB7B /* ScoreToggleView.swift */; };
+		8D31384D28BD6E3E007DAB7B /* RoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384C28BD6E3E007DAB7B /* RoundListView.swift */; };
+		8D31385028BD770D007DAB7B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31384F28BD770D007DAB7B /* SettingsView.swift */; };
 		8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3728BD504400017DC3 /* punktliApp.swift */; };
 		8DF8CA3A28BD504400017DC3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3928BD504400017DC3 /* GameView.swift */; };
 		8DF8CA3C28BD504700017DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF8CA3B28BD504700017DC3 /* Assets.xcassets */; };
@@ -20,6 +25,12 @@
 		8D31384028BD5285007DAB7B /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 		8D31384228BD52D2007DAB7B /* RoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModel.swift; sourceTree = "<group>"; };
 		8D31384428BD537B007DAB7B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = punktli/ViewModels/GameViewModel.swift; sourceTree = SOURCE_ROOT; };
+		8D31384628BD5931007DAB7B /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
+		8D31384828BD610F007DAB7B /* ScorePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePickerView.swift; sourceTree = "<group>"; };
+		8D31384A28BD630A007DAB7B /* ScoreToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreToggleView.swift; path = punktli/Views/ScoreToggleView.swift; sourceTree = "<group>"; };
+		8D31384C28BD6E3E007DAB7B /* RoundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundListView.swift; sourceTree = "<group>"; };
+		8D31384E28BD7698007DAB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D31384F28BD770D007DAB7B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8DF8CA3428BD504400017DC3 /* punktli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punktli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF8CA3728BD504400017DC3 /* punktliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = punktliApp.swift; sourceTree = "<group>"; };
 		8DF8CA3928BD504400017DC3 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -42,6 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				8DF8CA3928BD504400017DC3 /* GameView.swift */,
+				8D31384F28BD770D007DAB7B /* SettingsView.swift */,
+				8D31384C28BD6E3E007DAB7B /* RoundListView.swift */,
+				8D31384628BD5931007DAB7B /* TeamScoreView.swift */,
+				8D31384828BD610F007DAB7B /* ScorePickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -66,6 +81,7 @@
 		8DF8CA2B28BD504400017DC3 = {
 			isa = PBXGroup;
 			children = (
+				8D31384A28BD630A007DAB7B /* ScoreToggleView.swift */,
 				8DF8CA3628BD504400017DC3 /* punktli */,
 				8DF8CA3528BD504400017DC3 /* Products */,
 			);
@@ -82,6 +98,7 @@
 		8DF8CA3628BD504400017DC3 /* punktli */ = {
 			isa = PBXGroup;
 			children = (
+				8D31384E28BD7698007DAB7B /* Info.plist */,
 				8DF8CA3728BD504400017DC3 /* punktliApp.swift */,
 				8D31383E28BD5259007DAB7B /* Models */,
 				8D31383F28BD5260007DAB7B /* ViewModels */,
@@ -170,8 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D31384928BD610F007DAB7B /* ScorePickerView.swift in Sources */,
+				8D31384B28BD630A007DAB7B /* ScoreToggleView.swift in Sources */,
 				8D31384328BD52D2007DAB7B /* RoundModel.swift in Sources */,
 				8DF8CA3A28BD504400017DC3 /* GameView.swift in Sources */,
+				8D31384728BD5931007DAB7B /* TeamScoreView.swift in Sources */,
+				8D31385028BD770D007DAB7B /* SettingsView.swift in Sources */,
+				8D31384D28BD6E3E007DAB7B /* RoundListView.swift in Sources */,
 				8DF8CA3828BD504400017DC3 /* punktliApp.swift in Sources */,
 				8D31384528BD537B007DAB7B /* GameViewModel.swift in Sources */,
 				8D31384128BD5285007DAB7B /* TeamModel.swift in Sources */,
@@ -235,6 +257,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = punktli.;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -288,6 +311,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = punktli.;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -305,6 +329,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"punktli/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = punktli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,6 +358,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"punktli/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = punktli/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
